@@ -26,7 +26,6 @@ func CreateGrade(c *gin.Context) {
 	}
 	defer db.Close()
 
-	// Asegúrate de que todos los campos necesarios están presentes
 	if grade.StudentID == 0 || grade.SubjectID == 0 || grade.Grade == 0 {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Todos los campos son obligatorios (StudentID, SubjectID, Grade)."})
 		return

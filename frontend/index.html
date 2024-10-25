@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema Escolar</h1>
+        
+        <!-- Sección de Estudiantes -->
+        <section>
+            <h2>Gestión de Estudiantes</h2>
+            <form id="studentForm">
+                <input type="text" id="studentName" placeholder="Nombre" required>
+                <input type="text" id="studentGroup" placeholder="Grupo" required>
+                <input type="email" id="studentEmail" placeholder="Correo Electrónico" required>
+                <button type="submit">Agregar Estudiante</button>
+            </form>
+            <h3>Lista de Estudiantes</h3>
+            <ul id="studentList"></ul>
+            <!-- Formulario para actualizar un estudiante -->
+            <form id="updateStudentForm" style="display: none;">
+                <h3>Actualizar Estudiante</h3>
+                <input type="hidden" id="updateStudentID">
+                <input type="text" id="updateStudentName" placeholder="Nombre" required>
+                <input type="text" id="updateStudentGroup" placeholder="Grupo" required>
+                <input type="email" id="updateStudentEmail" placeholder="Correo Electrónico" required>
+                <button type="submit">Actualizar Estudiante</button>
+                <button type="button" id="cancelUpdateStudent">Cancelar</button>
+            </form>
+        </section>
+
+        
+
+        <!-- Sección de Materias -->
+        <section>
+            <h2>Gestión de Materias</h2>
+            <form id="subjectForm">
+                <input type="text" id="subjectName" placeholder="Nombre de la Materia" required>
+                <button type="submit">Agregar Materia</button>
+            </form>
+            <h3>Lista de Materias</h3>
+            <ul id="subjectList"></ul>
+            <!-- Formulario para actualizar una materia -->
+            <form id="updateSubjectForm" style="display: none;">
+                <h3>Actualizar Materia</h3>
+                <input type="hidden" id="updateSubjectID">
+                <input type="text" id="updateSubjectName" placeholder="Nombre de la Materia" required>
+                <button type="submit">Actualizar Materia</button>
+                <button type="button" id="cancelUpdateSubject">Cancelar</button>
+            </form>
+        </section>
+
+
+        <!-- Sección de Calificaciones -->
+        <section>
+            <h2>Gestión de Calificaciones</h2>
+            <form id="gradeForm">
+                <input type="number" id="gradeStudentID" placeholder="ID del Estudiante" required>
+                <input type="number" id="gradeSubjectID" placeholder="ID de la Materia" required>
+                <input type="number" id="gradeValue" placeholder="Calificación" step="0.01" required>
+                <button type="submit">Agregar Calificación</button>
+            </form>
+            <h3>Lista de Calificaciones por Estudiante</h3>
+            <input type="number" id="searchStudentID" placeholder="ID del Estudiante">
+            <button id="searchGradesBtn">Buscar Calificaciones</button>
+            <ul id="gradeList"></ul>
+
+            <!-- Formulario para actualizar una calificación -->
+            <form id="updateGradeForm" style="display: none;">
+                <h3>Actualizar Calificación</h3>
+                <input type="hidden" id="updateGradeID">
+                <input type="number" id="updateGradeValue" placeholder="Nueva Calificación" step="0.01" required>
+                <button type="submit">Actualizar Calificación</button>
+                <button type="button" id="cancelUpdateGrade">Cancelar</button>
+            </form>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
