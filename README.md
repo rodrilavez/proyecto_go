@@ -10,10 +10,7 @@
 6. [Frontend](#frontend)
 7. [API Endpoints](#api-endpoints)
 8. [Base de Datos](#base-de-datos)
-9. [Estructura del Proyecto](#estructura-del-proyecto)
-10. [Notas Adicionales](#notas-adicionales)
-11. [Contribuciones](#contribuciones)
-12. [Licencia](#licencia)
+   
 
 ## Descripción
 
@@ -173,33 +170,6 @@ student_id: INT
 subject_id: INT
 grade: FLOAT
 
-Estructura del Proyecto
-
-proyecto_go/
-├── main.go
-├── go.mod
-├── go.sum
-├── handlers/
-│   ├── h_students.go
-│   ├── h_subjects.go
-│   └── h_grades.go
-├── models/
-│   ├── student.go
-│   ├── subject.go
-│   └── grade.go
-├── database/
-│   ├── connection.go
-├── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   └── script.js
-└── README.md
-
-1. main.go: Punto de entrada de la aplicación.
-2. handlers/: Controladores para los endpoints de la API.
-3. models/: Definición de las estructuras de datos.
-4. database/: Conexión de la base de datos.
-5. frontend/: Archivos del frontend (HTML, CSS, JavaScript).
 
    TRABAJO FINAL PARA EL TALLER DE GO HECHO POR Rodrigo Lara Velazquez, Arely Garcia Duran e Ivanna Dominguez.
    Universidad Autonoma de Queretaro - Facultad de Informatica
