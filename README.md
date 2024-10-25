@@ -94,8 +94,8 @@ go mod tidy
 Ejecutar el Proyecto
 
 1. Compilar y Ejecutar el Servidor Backend
-2. 
-Ejecuta el siguiente comando para iniciar el servidor:
+2. Ejecuta el siguiente comando para iniciar el servidor:
+   
 go run main.go
 
 Esto iniciará el servidor en http://localhost:8080.
