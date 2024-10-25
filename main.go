@@ -27,6 +27,19 @@ func main() {
 	// Configuración de CORS
 	router.Use(cors.Default())
 
+	// Rutas para Estudiantes
+	router.POST("/api/students", handlers.CreateStudent)               //Crear Estudiante
+	router.DELETE("/api/students/:student_id", handlers.DeleteStudent) // Eliminar Estudiante
+	router.PUT("/api/students/:student_id", handlers.UpdateStudent)    // Actualizar Estudiante
+	router.GET("/api/students", handlers.GetAllStudents)               // Obtener Todos Los Estudiantes
+	router.GET("/api/students/:student_id", handlers.GetStudent)       //Obtener Estudiante
+
+	// Rutas para Materias
+	router.POST("/api/subjects", handlers.CreateSubject)               // Crear una nueva materia
+	router.PUT("/api/subjects/:subject_id", handlers.UpdateSubject)    // Actualizar una materia por ID
+	router.GET("/api/subjects/:subject_id", handlers.GetSubject)       // Obtener información de una materia por ID
+	router.GET("/api/subjects", handlers.GetAllSubjects)               // Obtener la lista de todas las materias
+	router.DELETE("/api/subjects/:subject_id", handlers.DeleteSubject) // Eliminar una materia por ID
 	// Rutas para Calificaciones
 
 	router.POST("/api/grades", handlers.CreateGrade)                              // Crear Calificación
