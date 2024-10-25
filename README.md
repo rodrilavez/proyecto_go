@@ -37,7 +37,7 @@ git clone https://github.com/rodrilavez/proyecto_go.git
 cd proyecto_go
 
 
-##Configuración del Proyecto
+## Configuración del Proyecto
 
 1. Configuración de la Base de Datos
    
@@ -101,7 +101,7 @@ Esto iniciará el servidor en http://localhost:8080.
 Puedes usar herramientas como Postman para probar los endpoints de la API.
 
 
-##Frontend
+## Frontend
 
 El proyecto incluye un frontend en JavaScript Vanilla que permite interactuar con el sistema escolar.
 
@@ -128,7 +128,7 @@ xdg-open index.html
 
 Nota: Al abrir el archivo directamente, algunas funcionalidades pueden verse limitadas debido a restricciones de seguridad del navegador (CORS). Si encuentras problemas, considera utilizar un servidor local simple o ajustar la configuración de seguridad de tu navegador.
 
-##API Endpoints
+## API Endpoints
 
 Estudiantes
 Crear Estudiante: POST /api/students
@@ -150,7 +150,7 @@ Obtener Calificaciones por Estudiante: GET /api/students/{student_id}/grades
 Actualizar Calificación: PUT /api/grades/{grade_id}
 Eliminar Calificación: DELETE /api/grades/{grade_id}
 
-##Base de Datos
+## Base de Datos
 
 La base de datos sistema_escolar contiene las siguientes tablas:
 
